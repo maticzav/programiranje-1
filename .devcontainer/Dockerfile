@@ -27,6 +27,9 @@ USER opam
 RUN opam update && opam install ocaml-lsp-server
 RUN opam user-setup install
 
+# Install utop
+RUN apt-get install utop
+
 # Copy installed python
 COPY --from=base-python /opt/venv /opt/venv
 COPY --from=base-python /usr/local/bin /usr/local/bin
