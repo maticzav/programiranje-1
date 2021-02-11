@@ -213,7 +213,7 @@ V indukcijskem koraku pokažemo, da enakost velja za sestavljeni seznam `x :: xs
         (po (6))
     = 1 + (dolzina xs + dolzina ys)
         (po indukcijski prepostavki)
-    = (1 + dolzina xs) + dolzina ys)
+    = (1 + dolzina xs) + dolzina ys
         (po Peanovih aksiomih)
     = dolzina (x :: xs) + dolzina ys
         (po (6))

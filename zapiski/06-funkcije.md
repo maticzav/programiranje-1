@@ -258,7 +258,7 @@ Videti je, kot da funkcija `f` podvoji svoj argument oziroma množi z $2$. Naše
 
 in dobimo enak rezultat.
 
-Tako je definicija funkcija več argumentov `fun x y -> ...` v resnici samo okrajšava za gnezdeni funkciji enega argumenta `fun x -> fun y -> ...`.
+Tako je definicija funkcije več argumentov `fun x y -> ...` v resnici samo okrajšava za gnezdeni funkciji enega argumenta `fun x -> fun y -> ...`.
 
 V resnici je `f x y` samo okrajšava za `(f x) y`. Podobno je `f x y z` okrajšava za `((f x) y) z`. Pravimo, da je aplikacija _levo asociativna_. (Če bi želeli, bi se lahko odločili, da bi bila aplikacija desno asociativna, torej da bi `a b c` pomenilo `a (b c)`, kar bi bilo koristno za veriženje funkcij, saj bi namesto `f (g x)` lahko pisali kar `f g x`. Vendar je takih primerov veliko manj kot klicev funkcij več argumentov, zato je leva asociativnost boljša izbira).
 
