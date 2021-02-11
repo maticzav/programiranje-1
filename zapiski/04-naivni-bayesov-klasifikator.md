@@ -87,7 +87,7 @@ Vse te podatke znamo izračunati, zato se lahko lotimo dela.
 Verjetnost posameznega žanra $P(Ž)$ izračunamo brez večjih težav:
 
 ```{code-cell}
-verjetnosti_zanrov = zanri.groupby('zanr').size() / len(filmi)
+verjetnosti_zanrov = filmi.groupby('zanr').size() / len(filmi)
 verjetnosti_zanrov.sort_values()
 ```
 
